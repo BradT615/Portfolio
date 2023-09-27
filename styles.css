@@ -6,5 +6,5 @@
     fill: #ffffff;
 }
 .icon:hover path {
-    fill: red;
+    fill: rgb(156, 156, 156);
 }
