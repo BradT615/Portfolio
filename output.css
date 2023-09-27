@@ -550,45 +550,13 @@ video {
   top: 0px;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -599,44 +567,12 @@ video {
   height: 3.5rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
 }
 
-.h-1\/4 {
-  height: 25%;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-14 {
   width: 3.5rem;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-fit {
@@ -644,40 +580,69 @@ video {
   width: fit-content;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.w-full {
+  width: 100%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.w-44 {
+  width: 11rem;
 }
 
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
+.w-96 {
+  width: 24rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-2 {
   gap: 0.5rem;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -702,16 +667,12 @@ video {
   padding: 4rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
@@ -724,18 +685,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-4xl {
@@ -774,6 +726,12 @@ video {
   fill: red;
 }
 
+@media not all and (min-width: 1024px) {
+  .max-lg\:w-full {
+    width: 100%;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -781,32 +739,32 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:fixed {
-    position: fixed;
-  }
-
-  .lg\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
-  .lg\:row-span-full {
-    grid-row: 1 / -1;
-  }
-
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:h-screen {
     height: 100vh;
   }
 
-  .lg\:h-full {
-    height: 100%;
+  .lg\:w-4\/6 {
+    width: 66.666667%;
   }
 
-  .lg\:grid-flow-col {
-    grid-auto-flow: column;
+  .lg\:w-5\/6 {
+    width: 83.333333%;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:overflow-y-auto {
