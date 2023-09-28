@@ -8,11 +8,11 @@
     <link href="output.css" rel="stylesheet">
 </head>
 <body class="bg-customBg text-white">
-    <div class="flex flex-col lg:flex-row justify-center relative">
+    <div class="flex flex-col lg:flex-row relative">
         <div class="logo absolute hidden sm:block top-0 right-0 p-16">
             <img class="w-14 h-14" src="images/logo-removebg.png" alt="Logo">
         </div>
-        <div class="pl-12 pt-12 flex flex-col justify-around items-end w-full gap-4">
+        <div class="pl-12 pt-12 lg:p-0 flex flex-col justify-around items-end w-full gap-4">
             <div class="title w-full lg:w-11/12 lg:max-w-lg">
                 <div class="name text-6xl font-bold text-customPrimaryText mb-2">Bradley Titus</div>
                 <div class="title text-2xl pl-1 font-semibold text-customText">Full Stack Developer</div>
@@ -38,14 +38,39 @@
                 </a>
             </div>
         </div>
-        <div class="p-16 lg:h-screen lg:overflow-y-auto w-full">
-            <div class="skills-container border-2 h-screen">
-                <h1>Skills</h1>
-                <div class="flex">
-
+        <div class="lg:h-screen lg:overflow-y-auto w-full">
+            <!-- <div class="skills-container h-screen">
+                <h1 class="text-center text-4xl font-semibold text-customPrimaryText mb-2">Skills</h1>
+                <div class="flex flex-wrap gap-4">
+                    <img src="images/html-logo.png" alt="Logo 1" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 2" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 1" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 2" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 1" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 2" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 1" class="flex-wrap">
+                    <img src="images/html-logo.png" alt="Logo 2" class="flex-wrap">
+                </div>
+            </div> -->
+            <div class="about-container px-12 pt-28">
+                <h1 class="text-4xl font-semibold text-customPrimaryText">About Me</h1>
+                <p class="text-2xl font-semibold text-customText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis inventore in atque nisi suscipit fugit beatae, quidem labore tempora, nobis quos nihil delectus iusto impedit non consequuntur. Vero, dolores laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolore placeat inventore. Quae, non asperiores! Ducimus, repellendus exercitationem atque ex, eaque blanditiis ullam porro dolorem quam accusantium cupiditate officiis placeat!
+                </p>
+            </div>
+            <div class="projects-container px-12 pt-28 w-full flex flex-col">
+                <h1 class="text-4xl pb-4 font-semibold text-customPrimaryText">Projects</h1>
+                <div class="project my-8 rounded-lg bg-customBgLight">
+                    <img class="w-52 m-6 rounded-lg bg-customText" src="images/logo-removebg.png" alt="">
+                </div>
+                <div class="project my-8 rounded-lg bg-customBgLight">
+                    <img class="w-52 m-6 rounded-lg bg-customText" src="images/logo-removebg.png" alt="">
+                </div>
+                <div class="project my-8 rounded-lg bg-customBgLight">
+                    <img class="w-52 m-6 rounded-lg bg-customText" src="images/logo-removebg.png" alt="">
                 </div>
             </div>
-            <div class="projects-container border-2 h-screen"></div>
             <div class="contact-container border-2 h-screen"></div>
         </div>
     </div>
