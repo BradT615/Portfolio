@@ -3,8 +3,8 @@
 @import 'tailwindcss/utilities';
 
 .icon path {
-    fill: #ffffff;
+    fill: #f1f1f4;
 }
 .icon:hover path {
-    fill: rgb(156, 156, 156);
+    fill: #9499c4;
 }
