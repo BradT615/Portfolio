@@ -9,6 +9,12 @@
     fill: #9499c4;
 }
 
+@media (min-width: 450px) {
+  .logo {
+    display: block;
+  }
+}
+
 /* * {
-    border: 1px solid white;
+  border: 1px solid white;
 } */
