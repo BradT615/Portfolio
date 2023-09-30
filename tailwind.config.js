@@ -10,6 +10,7 @@ module.exports = {
         customDarkBlue: '#30587b',
         customPrimaryText: '#f1f1f4',
         customText: '#9499c4',
+        customHeader: '#d4d4db'
       },
     },
   },
