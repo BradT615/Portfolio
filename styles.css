@@ -9,6 +9,10 @@
     fill: #9499c4;
 }
 
+.resume path {
+  fill: #f1f1f4;
+}
+
 @media (min-width: 450px) {
   .logo {
     display: block;
