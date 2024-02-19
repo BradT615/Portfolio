@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', (event) => {
   fetch('particles-config.json')
     .then(response => response.json())
@@ -11,32 +9,44 @@ document.addEventListener('DOMContentLoaded', (event) => {
       mainContent.style.opacity = "1";
     });
   
-  // Get the modal
-  var modal = document.getElementById("youtubeModal");
 
-  // Get the card element that opens the modal
+  var spotifyModal = document.getElementById("youtubeModal");
+  var qrModal = document.getElementById("qrModal");
+
   var card = document.querySelector(".spotify-project");
+  var qrCard = document.querySelector(".qr-project");
 
-  // Get the close button element that closes the modal
-  var closeModal = document.getElementById("closeModal");
+  var closeSpotifyModal = document.getElementById("closeSpotifyModal");
+  var closeQrModal = document.getElementById("closeQrModal");
 
-  // When the card is clicked, open the modal
   card.addEventListener('click', function() {
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
+    spotifyModal.classList.remove("hidden");
+    spotifyModal.classList.add("flex");
+  });
+  qrCard.addEventListener('click', function() {
+    qrModal.classList.remove("hidden");
+    qrModal.classList.add("flex");
   });
 
-  // When the close button is clicked, close the modal
-  closeModal.addEventListener('click', function() {
-    modal.classList.remove("flex");
-    modal.classList.add("hidden");
+  closeSpotifyModal.addEventListener('click', function() {
+    spotifyModal.classList.remove("flex");
+    spotifyModal.classList.add("hidden");
+  });
+  closeQrModal.addEventListener('click', function() {
+    qrModal.classList.remove("flex");
+    qrModal.classList.add("hidden");
   });
 
-  // When the user clicks anywhere outside of the modal, close it
   window.addEventListener('click', function(event) {
-      if (event.target == modal) {
-        modal.classList.remove("flex");
-        modal.classList.add("hidden");
+    if (event.target == spotifyModal) {
+      spotifyModal.classList.remove("flex");
+      spotifyModal.classList.add("hidden");
+    }
+  });
+  window.addEventListener('click', function(event) {
+      if (event.target == qrModal) {
+        qrModal.classList.remove("flex");
+        qrModal.classList.add("hidden");
       }
   });
 });

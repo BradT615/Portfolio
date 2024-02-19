@@ -37,13 +37,13 @@
 
 /* The handle of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: #3e405e;
+  background-color: #353766;
   border-radius: 10px;
 }
 
 /* Handle on hover state */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #9499c4;
+  background-color: #454987;
 }
 
 #particles-js {
