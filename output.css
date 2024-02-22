@@ -618,6 +618,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -739,6 +743,10 @@ video {
   row-gap: 2rem;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -831,6 +839,16 @@ video {
   padding-bottom: 7rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -861,6 +879,18 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .text-2xl {
@@ -1021,6 +1051,11 @@ video {
   box-shadow: 0 0 4px 0px rgba(23, 209, 224);
 }
 
+.project-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .placeholder\:text-\[\#c0c7ff\]::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(192 199 255 / var(--tw-text-opacity));
@@ -1096,11 +1131,6 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -1202,6 +1232,10 @@ video {
 
   .\32xl\:max-w-full {
     max-width: 100%;
+  }
+
+  .\32xl\:max-w-7xl {
+    max-width: 80rem;
   }
 
   .\32xl\:flex-row {

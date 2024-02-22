@@ -58,3 +58,8 @@
 .glow-effect:hover {
   box-shadow: 0 0 4px 0px rgba(23, 209, 224);
 }
+
+.project-animation {
+  opacity: 1;
+  transform: translateX(0);
+}

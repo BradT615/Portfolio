@@ -7,8 +7,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
       // Reveal the main content after particles have loaded
       const mainContent = document.getElementById('mainContent');
       mainContent.style.opacity = "1";
+
+      // Animate the containers
+      gsap.from('.left-container', { duration: 0.6, x: '-100%', opacity: 0 });
+      gsap.from('.right-container', { duration: 0.6, x: '100%', opacity: 0 });
+
+      // Animate the text inside the containers
+      gsap.from('.left-container > *', { duration: 1, delay: 0, opacity: 0 });
+      gsap.from('.right-container > *', { duration: 1, delay: 0, opacity: 0 });
     });
-  
+
+    var controller = new ScrollMagic.Controller();
+    var projectAnimations = document.querySelectorAll('.project-animation');
+
+    // For each .project-animation element
+    projectAnimations.forEach(function(projectAnimation) {
+      // Create a GSAP animation
+      var tween = gsap.from(projectAnimation, {duration: 0.4, x: '100%', opacity: 0});
+
+      // Create a ScrollMagic scene
+      new ScrollMagic.Scene({
+        triggerElement: projectAnimation,
+        triggerHook: 0.95,
+        reverse: false
+      })
+      .setTween(tween)
+      .addTo(controller);
+    });
 
   var spotifyModal = document.getElementById("youtubeModal");
   var qrModal = document.getElementById("qrModal");
@@ -44,9 +69,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   });
   window.addEventListener('click', function(event) {
-      if (event.target == qrModal) {
-        qrModal.classList.remove("flex");
-        qrModal.classList.add("hidden");
-      }
+    if (event.target == qrModal) {
+      qrModal.classList.remove("flex");
+      qrModal.classList.add("hidden");
+    }
   });
 });
