@@ -55,7 +55,11 @@
   z-index: -1;
 }
 
-.glow-effect:hover {
+.glow-effect {
+  box-shadow: 0 0 4px 0px rgba(23, 209, 224);
+}
+
+.glow-hover:hover {
   box-shadow: 0 0 4px 0px rgba(23, 209, 224);
 }
 
